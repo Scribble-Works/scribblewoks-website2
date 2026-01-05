@@ -1,0 +1,355 @@
+/* Custom CSS for Scribble Works Website */
+
+:root {
+  --primary-color: #1976d2;
+  --secondary-color: #424242;
+  --success-color: #388e3c;
+  --info-color: #0288d1;
+  --warning-color: #f57c00;
+  --danger-color: #d32f2f;
+  --purple-color: #7b1fa2;
+  --light-gray: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 50px 50px;
+  animation: moveBackground 20s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.hero-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero-icon {
+  font-size: 200px;
+  opacity: 0.3;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card Hover Effects */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Product Section Styles */
+.product-image-wrapper {
+  background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+  border-radius: 15px;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.product-icon {
+  font-size: 150px !important;
+  opacity: 0.8;
+}
+
+.product-content {
+  padding: 20px;
+}
+
+/* Gradient Backgrounds */
+.bg-gradient {
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #388e3c 0%, #2e7d32 100%);
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(135deg, #d32f2f 0%, #c62828 100%);
+}
+
+.bg-gradient-purple {
+  background: linear-gradient(135deg, #7b1fa2 0%, #6a1b9a 100%);
+}
+
+/* Workbook Cards */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card-header {
+  border: none;
+}
+
+/* Quote Section */
+.quote-section {
+  position: relative;
+}
+
+.blockquote {
+  position: relative;
+  font-style: italic;
+}
+
+/* Contact Cards */
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Button Styles */
+.btn-floating {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.btn-floating:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 0;
+  }
+
+  .hero-icon {
+    font-size: 100px;
+  }
+
+  .display-3 {
+    font-size: 2.5rem;
+  }
+
+  .display-5 {
+    font-size: 2rem;
+  }
+
+  .display-6 {
+    font-size: 1.75rem;
+  }
+
+  .product-image-wrapper {
+    padding: 40px;
+    min-height: 200px;
+  }
+
+  .product-icon {
+    font-size: 100px !important;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* Loading Animation */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Badge Styles */
+.badge {
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+}
+
+/* Icon Wrapper */
+.icon-wrapper {
+  display: inline-block;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Footer Styles */
+footer {
+  border-top: 4px solid var(--primary-color);
+}
+
+/* Utility Classes */
+.text-gradient {
+  background: linear-gradient(135deg, #1976d2 0%, #7b1fa2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Form Styles */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(25, 118, 210, 0.25);
+}
+
+/* Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
