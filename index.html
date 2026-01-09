@@ -23,7 +23,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top"
-        style="background: linear-gradient(90deg, #1e3a5f 0%, #2c5f5d 100%); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+        style="background: #1e40af; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="public/nav_logo.png" alt="Scribble Works" height="40">
@@ -34,16 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about" style="color: #B2BEB5 !important;">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#products">Products</a>
+                        <a class="nav-link" href="#products" style="color: #B2BEB5 !important;">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                        <a class="nav-link" href="#testimonials" style="color: #B2BEB5 !important;">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact" style="color: #B2BEB5 !important;">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -63,11 +63,13 @@
                     <p class="lead mb-4">Transforming education through accessible and effective tools tailored to the
                         unique needs of African classrooms.</p>
                     <div class="d-flex gap-3">
-                        <a href="#products" class="btn btn-light btn-lg">
+                        <a href="#products" class="btn btn-lg"
+                            style="background: #fbbf24; color: #1e3a5f; font-weight: 600; border: none; padding: 12px 32px; border-radius: 8px;">
                             Explore Products
                             <span class="material-icons align-middle ms-2">arrow_forward</span>
                         </a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg"
+                            style="border: 2px solid white; padding: 12px 32px; border-radius: 8px;">Get in Touch</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -80,11 +82,12 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5" style="background-color: #faf8f3;">
+    <section id="about" class="py-5" style="background-color: #f9fafb;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="display-5 fw-bold mb-3">Simplifying Education, Empowering the Future</h2>
+                    <h2 class="display-5 fw-bold mb-3" style="color: #1e3a5f;">Simplifying Education, Empowering the
+                        Future</h2>
                     <p class="lead text-muted">We simplify complex subjects like mathematics and empower educators with
                         actionable insights to improve learning outcomes.</p>
                 </div>
@@ -188,8 +191,8 @@
                                 Build confidence and problem-solving skills
                             </li>
                         </ul>
-                        <a href="https://assignmentx.scribbleworks.tech/" target="_blank"
-                            class="btn btn-primary btn-lg">
+                        <a href="https://assignmentx.scribbleworks.tech/" target="_blank" class="btn btn-lg"
+                            style="background: #fbbf24; color: #1e3a5f; font-weight: 600; border: none; border-radius: 8px;">
                             Visit AssignmentX
                             <span class="material-icons align-middle ms-2">launch</span>
                         </a>
@@ -645,7 +648,9 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="submitInquiry()">
+                    <button type="button" class="btn btn-lg"
+                        style="background: #3b82f6; color: white; font-weight: 600; border: none; border-radius: 8px;"
+                        onclick="submitInquiry()">
                         <span class="material-icons align-middle me-2">send</span>
                         Send Inquiry
                     </button>
