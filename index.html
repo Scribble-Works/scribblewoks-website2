@@ -22,8 +22,8 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top"
-        style="background: #1e40af; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+        style="box-shadow: 0 2px 12px rgba(0,0,0,0.08); backdrop-filter: blur(10px);">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="public/nav_logo.png" alt="Scribble Works" height="40">
@@ -34,16 +34,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about" style="color: #B2BEB5 !important;">About</a>
+                        <a class="nav-link fw-semibold" href="index.html" style="color: #1e3a5f !important;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#products" style="color: #B2BEB5 !important;">Products</a>
+                        <a class="nav-link fw-semibold" href="about.html" style="color: #1e3a5f !important;">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonials" style="color: #B2BEB5 !important;">Testimonials</a>
+                        <a class="nav-link fw-semibold" href="products.html"
+                            style="color: #1e3a5f !important;">Products</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact" style="color: #B2BEB5 !important;">Contact</a>
+                        <a class="nav-link fw-semibold" href="contact.html"
+                            style="color: #1e3a5f !important;">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -52,23 +55,22 @@
 
     <!-- Hero Section -->
     <section class="hero-section bg-gradient text-white py-5"
-        style="background-image: url('https://scribbleworks.carrd.co/assets/images/container09.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
+        style="background-image: url('public/20191107-IMG_0880.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; z-index: 0;">
         <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(143,143,143,0.7), rgba(143,143,143,0.7)); z-index: 1;">
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(143, 143, 143, 0.35), rgba(143, 143, 143, 0.618)); z-index: 1;">
         </div>
         <div class="container" style="position: relative; z-index: 2;">
             <div class="row align-items-center min-vh-75">
                 <div class="col-lg-6">
-                    <h1 class="display-3 fw-bold mb-4 animate-fade-in">Scribble Works Publishing House</h1>
-                    <p class="lead mb-4">Transforming education through accessible and effective tools tailored to the
-                        unique needs of African classrooms.</p>
+                    <h1 class="display-3 fw-bold mb-4 animate-fade-in">Education Solutions that improve learning
+                        outcomes</h1>
                     <div class="d-flex gap-3">
-                        <a href="#products" class="btn btn-lg"
+                        <a href="products.html" class="btn btn-lg"
                             style="background: #fbbf24; color: #1e3a5f; font-weight: 600; border: none; padding: 12px 32px; border-radius: 8px;">
                             Explore Products
                             <span class="material-icons align-middle ms-2">arrow_forward</span>
                         </a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg"
+                        <a href="contact.html" class="btn btn-outline-light btn-lg"
                             style="border: 2px solid white; padding: 12px 32px; border-radius: 8px;">Get in Touch</a>
                     </div>
                 </div>
@@ -81,399 +83,75 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5" style="background-color: #f9fafb;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="display-5 fw-bold mb-3" style="color: #1e3a5f;">Simplifying Education, Empowering the
-                        Future</h2>
-                    <p class="lead text-muted">We simplify complex subjects like mathematics and empower educators with
-                        actionable insights to improve learning outcomes.</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm hover-lift">
-                        <div class="card-body text-center">
-                            <div class="icon-wrapper mb-3">
-                                <span class="material-icons text-primary" style="font-size: 48px;">lightbulb</span>
-                            </div>
-                            <h4 class="card-title">Critical Thinking</h4>
-                            <p class="card-text">Develop problem-solving skills through innovative math resources.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm hover-lift">
-                        <div class="card-body text-center">
-                            <div class="icon-wrapper mb-3">
-                                <span class="material-icons text-success" style="font-size: 48px;">psychology</span>
-                            </div>
-                            <h4 class="card-title">Interactive Learning</h4>
-                            <p class="card-text">Engaging tools that make learning practical and fun.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm hover-lift">
-                        <div class="card-body text-center">
-                            <div class="icon-wrapper mb-3">
-                                <span class="material-icons text-warning" style="font-size: 48px;">favorite</span>
-                            </div>
-                            <h4 class="card-title">Lifelong Learning</h4>
-                            <p class="card-text">Foster a love of learning that lasts a lifetime.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section class="py-5"
-        style="background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, rgba(212,175,55,0.1) 100%);">
-        <!-- style="background: linear-gradient(135deg, rgba(212,175,55,0.05) 0%, rgba(212,175,55,0.1) 100%);"> -->
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="icon-wrapper mb-4">
-                        <span class="material-icons text-primary" style="font-size: 96px;">flag</span>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="display-4 fw-bold text-primary mb-4">Our Mission</h2>
-                    <p class="lead">To promote effective learning among all people for an enhanced human capability.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="py-5">
+    <!-- Partners Section -->
+    <section id="partners" class="py-5" style="background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">Our Products</h2>
-                <p class="lead text-muted">Innovative tools and resources for modern education</p>
+                <span class="badge bg-primary mb-3" style="font-size: 14px; padding: 8px 16px; border-radius: 20px;">Our
+                    Network</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #1e3a5f;">Our Partners</h2>
+                <p class="lead text-muted" style="max-width: 600px; margin: 0 auto;">Collaborating with leading
+                    organizations to transform education across Africa</p>
             </div>
-
-            <!-- AssignmentX -->
-            <div class="row mb-5 align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="product-image-wrapper">
-                        <img src="public/icon%20logo.png" alt="AssignmentX"
-                            style="max-width: 100%; height: auto; max-height: 200px;">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="product-content">
-                        <span class="badge bg-primary mb-3">Digital Platform</span>
-                        <h3 class="display-6 fw-bold mb-3">AssignmentX</h3>
-                        <p class="lead mb-4">A learning platform built to help students truly understand mathematics,
-                            not just memorize it. We use storytelling, real-life examples, games, and guided practice to
-                            make math engaging, practical, and fun.</p>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">
-                                <span class="material-icons text-success align-middle me-2">check_circle</span>
-                                Interactive storytelling approach
-                            </li>
-                            <li class="mb-2">
-                                <span class="material-icons text-success align-middle me-2">check_circle</span>
-                                Real-life examples and applications
-                            </li>
-                            <li class="mb-2">
-                                <span class="material-icons text-success align-middle me-2">check_circle</span>
-                                Gamified learning experience
-                            </li>
-                            <li class="mb-2">
-                                <span class="material-icons text-success align-middle me-2">check_circle</span>
-                                Build confidence and problem-solving skills
-                            </li>
-                        </ul>
-                        <a href="https://assignmentx.scribbleworks.tech/" target="_blank" class="btn btn-lg"
-                            style="background: #fbbf24; color: #1e3a5f; font-weight: 600; border: none; border-radius: 8px;">
-                            Visit AssignmentX
-                            <span class="material-icons align-middle ms-2">launch</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="my-5">
-
-            <!-- PrepTime Analytics -->
-            <div class="row mb-5 align-items-center flex-lg-row-reverse">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="product-image-wrapper">
-                        <img src="public/preptime_logo.png" alt="PrepTime Analytics"
-                            style="max-width: 100%; height: auto; max-height: 200px;">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="product-content">
-                        <span class="badge red mb-3">Analytics Tool</span>
-                        <h3 class="display-6 fw-bold mb-3">PrepTime Analytics</h3>
-                        <p class="lead mb-4">From Google Forms to Actionable Insights. A Google Forms and Sheets add-on
-                            that enhances functionality to analyze and report assessment results in a meaningful way.
-                        </p>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">
-                                <span class="material-icons text-success align-middle me-2">check_circle</span>
-                                Seamless Google Forms integration
-                            </li>
-                            <li class="mb-2">
-                                <span class="material-icons text-success align-middle me-2">check_circle</span>
-                                Comprehensive assessment analysis
-                            </li>
-                            <li class="mb-2">
-                                <span class="material-icons text-success align-middle me-2">check_circle</span>
-                                Actionable insights and reports
-                            </li>
-                            <li class="mb-2">
-                                <span class="material-icons text-success align-middle me-2">check_circle</span>
-                                Data-driven improvements
-                            </li>
-                        </ul>
-                        <a href="https://preptimeanalytics.com/" target="_blank" class="btn red btn-lg text-white">
-                            Visit PrepTime Analytics
-                            <span class="material-icons align-middle ms-2">launch</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="my-5">
-
-            <!-- Assignment Workbook Series -->
-            <div class="row mb-5">
-                <div class="col-12 text-center mb-4">
-                    <span class="badge bg-warning text-dark mb-3">Workbook Series</span>
-                    <h3 class="display-6 fw-bold mb-3">Assignment Workbook Series</h3>
-                    <p class="lead text-muted mb-5">For Junior High Pupils - Reinforce key concepts with structured
-                        practice, clear explanations, and targeted exercises designed to build a solid mathematical
-                        foundation.</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <!-- First Assignment -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow hover-lift border-0">
-                        <div class="card-header bg-gradient-primary text-white text-center py-4">
-                            <span class="material-icons mb-2" style="font-size: 48px;">looks_one</span>
-                            <h4 class="mb-0">First Assignment</h4>
-                        </div>
+            <div class="row g-4 align-items-center justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 text-center p-4"
+                        style="border-radius: 16px; transition: all 0.3s ease; cursor: pointer;"
+                        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.15)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'">
                         <div class="card-body">
-                            <p class="card-text">Foundation building workbook for Form 1 students. Comprehensive
-                                coverage of fundamental mathematical concepts with clear explanations and progressive
-                                exercises.</p>
-                            <ul class="list-unstyled small">
-                                <li class="mb-2">
-                                    <span class="material-icons text-primary" style="font-size: 16px;">done</span>
-                                    Exhaustive content coverage
-                                </li>
-                                <li class="mb-2">
-                                    <span class="material-icons text-primary" style="font-size: 16px;">done</span>
-                                    Meticulous arrangement
-                                </li>
-                                <li class="mb-2">
-                                    <span class="material-icons text-primary" style="font-size: 16px;">done</span>
-                                    Second to none standard
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 text-center pb-4">
-                            <button class="btn btn-outline-primary" data-bs-toggle="modal"
-                                data-bs-target="#inquiryModal">
-                                <span class="material-icons align-middle me-2">info</span>
-                                Learn More
-                            </button>
+                            <div class="mb-3"
+                                style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center;">
+                                <span class="material-icons" style="font-size: 48px; color: white;">business</span>
+                            </div>
+                            <h5 class="fw-bold mt-3">Partner 1</h5>
+                            <p class="text-muted small mb-0">Education Technology</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Second Assignment -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow hover-lift border-0">
-                        <div class="card-header bg-gradient-success text-white text-center py-4">
-                            <span class="material-icons mb-2" style="font-size: 48px;">looks_two</span>
-                            <h4 class="mb-0">Second Assignment</h4>
-                        </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 text-center p-4"
+                        style="border-radius: 16px; transition: all 0.3s ease; cursor: pointer;"
+                        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.15)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'">
                         <div class="card-body">
-                            <p class="card-text">Intermediate level workbook for Form 2 students. Advanced topics with
-                                practical applications and challenging problems to enhance mathematical proficiency.</p>
-                            <ul class="list-unstyled small">
-                                <li class="mb-2">
-                                    <span class="material-icons text-success" style="font-size: 16px;">done</span>
-                                    Progressive difficulty
-                                </li>
-                                <li class="mb-2">
-                                    <span class="material-icons text-success" style="font-size: 16px;">done</span>
-                                    Real-world applications
-                                </li>
-                                <li class="mb-2">
-                                    <span class="material-icons text-success" style="font-size: 16px;">done</span>
-                                    Critical thinking exercises
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 text-center pb-4">
-                            <button class="btn btn-outline-success" data-bs-toggle="modal"
-                                data-bs-target="#inquiryModal">
-                                <span class="material-icons align-middle me-2">info</span>
-                                Learn More
-                            </button>
+                            <div class="mb-3"
+                                style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center;">
+                                <span class="material-icons" style="font-size: 48px; color: white;">school</span>
+                            </div>
+                            <h5 class="fw-bold mt-3">Partner 2</h5>
+                            <p class="text-muted small mb-0">Educational Institution</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Last Assignment -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow hover-lift border-0">
-                        <div class="card-header bg-gradient-danger text-white text-center py-4">
-                            <span class="material-icons mb-2" style="font-size: 48px;">looks_3</span>
-                            <h4 class="mb-0">Last Assignment</h4>
-                        </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 text-center p-4"
+                        style="border-radius: 16px; transition: all 0.3s ease; cursor: pointer;"
+                        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.15)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'">
                         <div class="card-body">
-                            <p class="card-text">Final preparation workbook for Form 3 students. Comprehensive revision
-                                and exam-focused practice to ensure success in final assessments.</p>
-                            <ul class="list-unstyled small">
-                                <li class="mb-2">
-                                    <span class="material-icons text-danger" style="font-size: 16px;">done</span>
-                                    Exam-focused content
-                                </li>
-                                <li class="mb-2">
-                                    <span class="material-icons text-danger" style="font-size: 16px;">done</span>
-                                    Comprehensive revision
-                                </li>
-                                <li class="mb-2">
-                                    <span class="material-icons text-danger" style="font-size: 16px;">done</span>
-                                    Success preparation
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 text-center pb-4">
-                            <button class="btn btn-outline-danger" data-bs-toggle="modal"
-                                data-bs-target="#inquiryModal">
-                                <span class="material-icons align-middle me-2">info</span>
-                                Learn More
-                            </button>
+                            <div class="mb-3"
+                                style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center;">
+                                <span class="material-icons"
+                                    style="font-size: 48px; color: white;">account_balance</span>
+                            </div>
+                            <h5 class="fw-bold mt-3">Partner 3</h5>
+                            <p class="text-muted small mb-0">Government Agency</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Boot Camps -->
-            <div class="row mt-5">
-                <div class="col-12">
-                    <div class="card bg-gradient-purple text-white shadow-lg">
-                        <div class="card-body p-5 text-center">
-                            <span class="material-icons mb-3" style="font-size: 64px;">groups</span>
-                            <h3 class="display-6 fw-bold mb-3">Transformative Boot Camps</h3>
-                            <p class="lead mb-4">Immersive, hands-on learning experiences led by expert instructors with
-                                peer collaboration.</p>
-                            <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#inquiryModal">
-                                <span class="material-icons align-middle me-2">event</span>
-                                Inquire About Boot Camps
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Vision Section -->
-    <section class="py-5 text-white" style="background: linear-gradient(135deg, #1e3a5f 0%, #2c5f5d 100%);">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto text-center">
-                    <div class="icon-wrapper mb-4">
-                        <span class="material-icons" style="font-size: 96px;">visibility</span>
-                    </div>
-                    <h2 class="display-4 fw-bold mb-4">Our Vision</h2>
-                    <p class="lead mb-3">We aim to become Africa's leading provider of data-driven assessment tools,
-                        equipping learners, educators, and policymakers with insights to improve learning outcomes and
-                        drive meaningful educational change.</p>
-                    <p class="lead">Through innovative digital and print solutions, we will ensure that every
-                        school—regardless of infrastructure—has access to effective learning assessment tools by 2030,
-                        supporting 1 million students through innovative assessment solutions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quote Section -->
-    <section class="quote-section py-5" style="background-color: #faf8f3;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <span class="material-icons mb-3 text-primary" style="font-size: 48px;">format_quote</span>
-                    <blockquote class="blockquote">
-                        <p class="display-6 fw-light mb-4">"The essence of mathematics is not to make simple things
-                            complicated, but to make complicated things simple."</p>
-                        <footer class="blockquote-footer mt-3">S. Gudder</footer>
-                    </blockquote>
-                    <p class="lead text-primary mt-4">Discover the power of mathematical thinking.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Values Section -->
-    <section class="py-5"
-        style="background: linear-gradient(135deg, rgba(212,175,55,0.08) 0%, rgba(30,58,95,0.05) 100%);">
-        <div class="container">
-            <div class="text-center mb-5">
-                <div class="icon-wrapper mb-4">
-                    <span class="material-icons text-warning" style="font-size: 96px;">stars</span>
-                </div>
-                <h2 class="display-4 fw-bold text-warning mb-4">Our Core Values</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center p-4">
-                            <span class="material-icons text-danger mb-3" style="font-size: 56px;">favorite</span>
-                            <h4 class="fw-bold mb-3">Passion</h4>
-                            <p class="card-text">We love what we do!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center p-4">
-                            <span class="material-icons text-info mb-3" style="font-size: 56px;">people</span>
-                            <h4 class="fw-bold mb-3">Respect</h4>
-                            <p class="card-text">Everyone matters!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center p-4">
-                            <span class="material-icons text-warning mb-3" style="font-size: 56px;">emoji_objects</span>
-                            <h4 class="fw-bold mb-3">Innovation</h4>
-                            <p class="card-text">We chart new paths!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center p-4">
-                            <span class="material-icons text-success mb-3" style="font-size: 56px;">repeat</span>
-                            <h4 class="fw-bold mb-3">Consistency</h4>
-                            <p class="card-text">We keep going, no matter how tough!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center p-4">
-                            <span class="material-icons text-primary mb-3" style="font-size: 56px;">verified</span>
-                            <h4 class="fw-bold mb-3">Excellence</h4>
-                            <p class="card-text">We commit to do things the right way!</p>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 text-center p-4"
+                        style="border-radius: 16px; transition: all 0.3s ease; cursor: pointer;"
+                        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.15)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'">
+                        <div class="card-body">
+                            <div class="mb-3"
+                                style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center;">
+                                <span class="material-icons" style="font-size: 48px; color: white;">groups</span>
+                            </div>
+                            <h5 class="fw-bold mt-3">Partner 4</h5>
+                            <p class="text-muted small mb-0">Community Organization</p>
                         </div>
                     </div>
                 </div>
@@ -482,117 +160,73 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-5">
+    <section id="testimonials" class="py-5" style="background: white;">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">Testimonials</h2>
-                <p class="lead text-muted">What educators and students say about us</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <div class="d-flex mb-3">
-                                <span class="material-icons text-warning">star</span>
-                                <span class="material-icons text-warning">star</span>
-                                <span class="material-icons text-warning">star</span>
-                                <span class="material-icons text-warning">star</span>
-                                <span class="material-icons text-warning">star</span>
-                            </div>
-                            <p class="card-text mb-4">"At first glance, you do not need a second look to tell you the
-                                material is excellent. The content is exhaustive, the arrangement is meticulous and the
-                                standard is second to none. A very impressive effort."</p>
-                            <div class="d-flex align-items-center">
-                                <div class="avatar-wrapper me-3">
-                                    <span class="material-icons text-primary"
-                                        style="font-size: 48px;">account_circle</span>
-                                </div>
-                                <div>
-                                    <h6 class="mb-0 fw-bold">Baldwin Lamptey</h6>
-                                    <small class="text-muted">Maths Teacher, Day Spring Montessori Int. Sch,
-                                        Dansoman</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <div class="d-flex mb-3">
-                                <span class="material-icons text-warning">star</span>
-                                <span class="material-icons text-warning">star</span>
-                                <span class="material-icons text-warning">star</span>
-                                <span class="material-icons text-warning">star</span>
-                                <span class="material-icons text-warning">star</span>
-                            </div>
-                            <p class="card-text mb-4">"The First Assignment Maths Workbook has helped refresh my memory
-                                on form 1 topics. It is also a very effective way to keep yourself busy during free
-                                times."</p>
-                            <div class="d-flex align-items-center">
-                                <div class="avatar-wrapper me-3">
-                                    <span class="material-icons text-primary"
-                                        style="font-size: 48px;">account_circle</span>
-                                </div>
-                                <div>
-                                    <h6 class="mb-0 fw-bold">Kelly-Sarah Hillah</h6>
-                                    <small class="text-muted">Final Year Pupil, Day Spring Montessori Int. Sch,
-                                        Dansoman</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 text-white"
-        style="background: linear-gradient(135deg, #1e3a5f 0%, #2c3e50 100%);">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">Contact Us!</h2>
-                <p class="lead">For more details kindly contact us on our various platforms</p>
+                <span class="badge bg-warning text-dark mb-3"
+                    style="font-size: 14px; padding: 8px 16px; border-radius: 20px;">Success Stories</span>
+                <h2 class="display-5 fw-bold mb-3" style="color: #1e3a5f;">Testimonials</h2>
+                <p class="lead text-muted" style="max-width: 600px; margin: 0 auto;">What educators and students say
+                    about our educational solutions</p>
             </div>
             <div class="row g-4 justify-content-center">
-                <div class="col-md-3 col-sm-6">
-                    <div class="contact-card text-center p-4">
-                        <span class="material-icons mb-3" style="font-size: 48px;">email</span>
-                        <h5>Email</h5>
-                        <p class="small">Get in touch via email</p>
+                <div class="col-lg-5 col-md-6">
+                    <div class="card h-100 border-0"
+                        style="border-radius: 20px; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); box-shadow: 0 8px 20px rgba(251, 191, 36, 0.2);">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <span class="material-icons" style="color: #f59e0b; font-size: 20px;">star</span>
+                                <span class="material-icons" style="color: #f59e0b; font-size: 20px;">star</span>
+                                <span class="material-icons" style="color: #f59e0b; font-size: 20px;">star</span>
+                                <span class="material-icons" style="color: #f59e0b; font-size: 20px;">star</span>
+                                <span class="material-icons" style="color: #f59e0b; font-size: 20px;">star</span>
+                            </div>
+                            <p class="card-text mb-4" style="color: #78350f; font-size: 15px; line-height: 1.7;">"At
+                                first glance, you do not need a second look to tell you the material is excellent. The
+                                content is exhaustive, the arrangement is meticulous and the standard is second to none.
+                                A very impressive effort."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="me-3"
+                                    style="width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);">
+                                    <span class="material-icons"
+                                        style="font-size: 32px; color: white;">account_circle</span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold" style="color: #78350f;">Baldwin Lamptey</h6>
+                                    <small style="color: #92400e;">Maths Teacher, Day Spring Montessori Int. Sch</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="contact-card text-center p-4">
-                        <span class="material-icons mb-3" style="font-size: 48px;">phone</span>
-                        <h5>Call</h5>
-                        <p class="small">Speak with our team</p>
+                <div class="col-lg-5 col-md-6">
+                    <div class="card h-100 border-0"
+                        style="border-radius: 20px; background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <span class="material-icons" style="color: #2563eb; font-size: 20px;">star</span>
+                                <span class="material-icons" style="color: #2563eb; font-size: 20px;">star</span>
+                                <span class="material-icons" style="color: #2563eb; font-size: 20px;">star</span>
+                                <span class="material-icons" style="color: #2563eb; font-size: 20px;">star</span>
+                                <span class="material-icons" style="color: #2563eb; font-size: 20px;">star</span>
+                            </div>
+                            <p class="card-text mb-4" style="color: #1e3a8a; font-size: 15px; line-height: 1.7;">"The
+                                First Assignment Maths Workbook has helped refresh my memory on form 1 topics. It is
+                                also a very effective way to keep yourself busy during free times."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="me-3"
+                                    style="width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);">
+                                    <span class="material-icons"
+                                        style="font-size: 32px; color: white;">account_circle</span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold" style="color: #1e3a8a;">Kelly-Sarah Hillah</h6>
+                                    <small style="color: #1e40af;">Final Year Pupil, Day Spring Montessori Int.
+                                        Sch</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="contact-card text-center p-4">
-                        <span class="material-icons mb-3" style="font-size: 48px;">chat</span>
-                        <h5>WhatsApp</h5>
-                        <p class="small">Message us directly</p>
-                    </div>
-                </div>
-            </div>
-            <div class="social-links text-center mt-5">
-                <h5 class="mb-4">Follow Us</h5>
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="#" class="btn btn-outline-light btn-floating" aria-label="Facebook">
-                        <span class="material-icons">facebook</span>
-                    </a>
-                    <a href="#" class="btn btn-outline-light btn-floating" aria-label="Instagram">
-                        <span class="material-icons">photo_camera</span>
-                    </a>
-                    <a href="#" class="btn btn-outline-light btn-floating" aria-label="Twitter/X">
-                        <span class="material-icons">tag</span>
-                    </a>
-                    <a href="#" class="btn btn-outline-light btn-floating" aria-label="LinkedIn">
-                        <span class="material-icons">business_center</span>
-                    </a>
                 </div>
             </div>
         </div>
