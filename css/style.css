@@ -1,22 +1,58 @@
 /* Custom CSS for Scribble Works Website */
 
 :root {
-  --primary-color: #3b82f6;
-  --secondary-color: #1e3a5f;
+  --primary-color: #3e4e5b;
+  --secondary-color: #1a202c;
   --success-color: #22c55e;
-  --info-color: #3b82f6;
-  --warning-color: #fbbf24;
+  --info-color: #0a97d9;
+  --warning-color: #fcc30b;
   --danger-color: #ef4444;
-  --purple-color: #a855f7;
+  --purple-color: #8b5cf6;
   --light-gray: #f9fafb;
-  --gold: #fbbf24;
-  --navy: #1e40af;
+  --gold: #fcc30b;
+  --navy: #1a202c;
   --burgundy: #8b1538;
   --cream: #fef3c7;
-  --dark-teal: #2c5f5d;
-  --accent-yellow: #fbbf24;
-  --accent-blue: #3b82f6;
+  --dark-teal: #2d3748;
+  --accent-yellow: #fcc30b;
+  --accent-blue: #0a97d9;
   --text-gray: #6b7280;
+  --bs-primary: #3e4e5b;
+  --bs-primary-rgb: 62, 78, 91;
+}
+
+/* Bootstrap Primary Color Override */
+.btn-primary {
+  background-color: #3e4e5b !important;
+  border-color: #3e4e5b !important;
+}
+
+.btn-primary:hover {
+  background-color: #2d3748 !important;
+  border-color: #2d3748 !important;
+}
+
+.bg-primary {
+  background-color: #3e4e5b !important;
+}
+
+.text-primary {
+  color: #3e4e5b !important;
+}
+
+.border-primary {
+  border-color: #3e4e5b !important;
+}
+
+.btn-outline-primary {
+  color: #3e4e5b !important;
+  border-color: #3e4e5b !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #3e4e5b !important;
+  border-color: #3e4e5b !important;
+  color: white !important;
 }
 
 * {
@@ -69,7 +105,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #2d3748 0%, #3e4e5b 100%);
   position: relative;
   overflow: hidden;
 }
@@ -171,11 +207,11 @@ body {
 
 /* Gradient Backgrounds */
 .bg-gradient {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #2d3748 0%, #3e4e5b 100%);
 }
 
 .bg-gradient-primary {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #2d3748 0%, #3e4e5b 100%);
 }
 
 .bg-gradient-success {
@@ -191,7 +227,7 @@ body {
 }
 
 .bg-gradient-yellow {
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  background: linear-gradient(135deg, #fcc30b 0%, #e6b000 100%);
 }
 
 /* Workbook Cards */
@@ -341,12 +377,12 @@ html {
 /* Footer Styles */
 footer {
   border-top: 4px solid var(--gold);
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #2d3748 0%, #3e4e5b 100%);
 }
 
 /* Utility Classes */
 .text-gradient {
-  background: linear-gradient(135deg, #1e40af 0%, #fbbf24 100%);
+  background: linear-gradient(135deg, #0a97d9 0%, #fcc30b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -357,8 +393,8 @@ footer {
 }
 
 .btn-yellow {
-  background: #fbbf24 !important;
-  color: #1e3a5f !important;
+  background: #fcc30b !important;
+  color: #1a202c !important;
   font-weight: 600;
   border: none;
   border-radius: 8px;
@@ -366,13 +402,13 @@ footer {
 }
 
 .btn-yellow:hover {
-  background: #f59e0b !important;
+  background: #e6b000 !important;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+  box-shadow: 0 4px 12px rgba(252, 195, 11, 0.3);
 }
 
 .btn-blue {
-  background: #3b82f6 !important;
+  background: #3e4e5b !important;
   color: white !important;
   font-weight: 600;
   border: none;
@@ -381,16 +417,16 @@ footer {
 }
 
 .btn-blue:hover {
-  background: #2563eb !important;
+  background: #2d3748 !important;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(62, 78, 91, 0.3);
 }
 
 /* Form Styles */
 .form-control:focus,
 .form-select:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 0.2rem rgba(25, 118, 210, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(62, 78, 91, 0.25);
 }
 
 /* Animation Classes */
@@ -403,4 +439,39 @@ footer {
 .animate-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Accent Blue Color Utilities */
+.bg-accent-blue {
+  background-color: #0a97d9 !important;
+}
+
+.text-accent-blue {
+  color: #0a97d9 !important;
+}
+
+.btn-accent-blue {
+  background: #0a97d9 !important;
+  color: white !important;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-accent-blue:hover {
+  background: #0881bc !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(10, 151, 217, 0.3);
+}
+
+.btn-outline-accent-blue {
+  color: #0a97d9 !important;
+  border-color: #0a97d9 !important;
+  border-width: 2px;
+}
+
+.btn-outline-accent-blue:hover {
+  background-color: #0a97d9 !important;
+  color: white !important;
 }
