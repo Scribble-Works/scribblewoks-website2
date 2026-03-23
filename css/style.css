@@ -350,6 +350,108 @@ body {
   }
 }
 
+/* About Page — Hero Section */
+.about-hero {
+  min-height: 80vh;
+  background-attachment: fixed;
+}
+
+.about-hero-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.about-hero-icon .material-icons {
+  font-size: 40px;
+}
+
+.about-card-title {
+  font-size: 1.25rem;
+}
+
+.about-card-text {
+  font-size: 0.95rem;
+}
+
+.mission-img {
+  height: 390px;
+}
+
+.core-values-icon {
+  font-size: 96px;
+}
+
+/* About Page — Mobile Overrides */
+@media (max-width: 767.98px) {
+  .about-hero {
+    min-height: auto;
+    background-attachment: scroll;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .about-hero .display-4 {
+    font-size: 1.75rem;
+  }
+
+  .about-hero .lead {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .about-hero-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px !important;
+  }
+
+  .about-hero-icon .material-icons {
+    font-size: 24px;
+  }
+
+  .about-card-title {
+    font-size: 0.85rem;
+  }
+
+  .about-card-text {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .about-hero .row.g-4 {
+    --bs-gutter-x: 0.75rem;
+    --bs-gutter-y: 0.75rem;
+  }
+
+  .about-hero .card-body {
+    padding: 0.75rem !important;
+  }
+
+  .mission-img {
+    height: 250px;
+  }
+
+  .core-values-icon {
+    font-size: 56px;
+  }
+}
+
+/* About Page — Small-medium screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-hero {
+    min-height: auto;
+    background-attachment: scroll;
+  }
+
+  .about-hero .display-4 {
+    font-size: 2.25rem;
+  }
+
+  .mission-img {
+    height: 300px;
+  }
+}
+
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
