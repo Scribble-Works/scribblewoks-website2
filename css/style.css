@@ -509,6 +509,31 @@ footer {
   background: linear-gradient(135deg, #2d3748 0%, #3e4e5b 100%);
 }
 
+.newsletter-panel {
+  max-width: 1050px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 14px 35px rgba(62, 78, 91, 0.12);
+}
+
+.newsletter-form .form-control {
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  min-height: 46px;
+}
+
+.footer-newsletter-link {
+  color: #fcc30b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-newsletter-link:hover {
+  color: #fde68a;
+  text-decoration: underline;
+}
+
 /* Utility Classes */
 .text-gradient {
   background: linear-gradient(135deg, #0a97d9 0%, #fcc30b 100%);
